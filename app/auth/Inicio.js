@@ -20,10 +20,10 @@ const Carousel = () => {
   const { width } = useWindowDimensions();
 
   const images = [
-    require("../assets/images/perross.png"),
-    require("../assets/images/carrusel2.png"),
-    require("../assets/images/carrusel3.png"),
-    require("../assets/images/perrogato.png"),
+    require("../../assets/images/perross.png"),
+    require("../../assets/images/carrusel2.png"),
+    require("../../assets/images/carrusel3.png"),
+    require("../../assets/images/perrogato.png"),
   ];
 
   useEffect(() => {
@@ -142,22 +142,15 @@ export default function App() {
       {/* Header */}
       <View style={styles.header}>
         <Image
-          source={require("../assets/images/logopetmatch.png")}
+          source={require("../../assets/images/logopetmatch.png")}
           style={styles.logo}
         />
-        <View style={styles.headerButtons}>
-          <Link href="/auth/SignUp" style={styles.registerButton}>
-            <Text style={styles.registerButtonText}>
-              Registrarse/Iniciar Sesión
-            </Text>
-          </Link>
-          <TouchableOpacity
-            style={styles.menuButton}
-            onPress={() => setMenuVisible(true)}
-          >
-            <FontAwesome name="bars" size={24} color="#fff" />
-          </TouchableOpacity>
-        </View>
+        <TouchableOpacity
+          style={styles.menuButton}
+          onPress={() => setMenuVisible(true)}
+        >
+          <FontAwesome name="bars" size={24} color="#fff" />
+        </TouchableOpacity>
       </View>
 
       {/* Carousel */}
@@ -167,14 +160,14 @@ export default function App() {
       <View style={styles.subMenu}>
         <TouchableOpacity style={styles.subMenuItem}>
           <Image
-            source={require("../assets/images/icon1.png")}
+            source={require("../../assets/images/icon1.png")}
             style={styles.icon}
           />
           <Text style={styles.subMenuText}>Variedad De Mascotas</Text>
         </TouchableOpacity>
         <TouchableOpacity style={styles.subMenuItem}>
           <Image
-            source={require("../assets/images/icon2.png")}
+            source={require("../../assets/images/icon2.png")}
             style={styles.icon}
           />
           <Text style={styles.subMenuText}>Reseñas</Text>
@@ -227,25 +220,25 @@ export default function App() {
         {/* Sección 2 */}
         <View style={styles.footerSection}>
           <Image
-            source={require("../assets/images/logopetmatch.png")}
+            source={require("../../assets/images/logopetmatch.png")}
             style={styles.logo}
           />
           <View style={styles.socialIcons}>
             <TouchableOpacity>
               <Image
-                source={require("../assets/images/faceb.png")}
+                source={require("../../assets/images/faceb.png")}
                 style={styles.icon}
               />
             </TouchableOpacity>
             <TouchableOpacity>
               <Image
-                source={require("../assets/images/whats.png")}
+                source={require("../../assets/images/whats.png")}
                 style={styles.icon}
               />
             </TouchableOpacity>
             <TouchableOpacity>
               <Image
-                source={require("../assets/images/insta.png")}
+                source={require("../../assets/images/insta.png")}
                 style={styles.icon}
               />
             </TouchableOpacity>
